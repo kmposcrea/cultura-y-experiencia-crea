@@ -1,0 +1,161 @@
+/* Importar fuentes */
+@font-face {
+    font-family: 'TipografiaTextos';
+    src: url(/fonts/AtkinsonHyperlegible-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TipografiaTitulos';
+    src: url(/fonts/NortHeadline-Cond.ttf) format('truetype');
+  }
+
+
+ 
+
+
+body{
+    background-color: #a8de73 !important;
+}
+
+.inspira-div{
+    display: flex;
+}
+
+.inspira-img{
+    width: 800px;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inspira-img > img{
+    /*top   dere    abajo  izq*/
+    margin: 30px 0px 0px 100px;
+    width: 600px;
+    height: 849px;
+}
+
+.inspira-texto{
+    font-family: tipografiaTextos;
+    color: #0b01c0;
+    margin-top: 180px;
+    width: 1000px;
+
+
+
+}
+
+.inspira-titulo > h2{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inspira-contenido > p{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.inspira-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: tipografiaTextos;
+    font-size: 42px;
+    font-weight: bold;
+    background-color:#ffe667;
+    justify-content: center;
+    width: 400px;
+    height: 100px;
+    padding-top: 16px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.inspira-form > a{
+    text-decoration: none;
+    color: #0b01c0;
+    text-decoration: underline;
+    position: absolute;
+}
+
+
+.inspira-icono{
+    position: relative;
+    top: -10px;
+    right: 170px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.inspira-icono > img{
+    width: 150px;
+}
+
+
+.talleres-titulo{
+    margin-top: 20px;
+}
+
+.talleres-titulo > h2{
+    font-weight: bold;
+    font-size: 50px;
+    color: #0b01c0;
+    font-family: TipografiaTextos;
+    text-align: center;
+}
+
+.talleres-contenido{
+    margin-top: 20px;
+    font-size: 50px;
+    width: 1350px;
+    line-height: 170px;
+    color: #0b01c0;
+    font-family: TipografiaTextos;
+    margin-left: 50%;
+    transform: translate(-50%);
+
+}
+
+.talleres-contenido > ul{
+list-style:none;
+
+}
+
+.taller-img{
+    width: 100px;
+    height: 100px;
+}
+
+.taller-img > img{
+    width: 100px;
+}
+
+
+.talleres-regresar{
+    color: #0b01c0;
+    font-family: tipografiatextos;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.talleres-regresar > a {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+
+
+    text-decoration: none;
+    color: #0b01c0;
+}
+
+
+.talleres-regresar > a:hover{
+    color: #ffe667;
+    text-decoration: underline;
+}
+
+

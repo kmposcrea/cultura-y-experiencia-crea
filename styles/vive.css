@@ -1,0 +1,111 @@
+/* Importar fuentes */
+@font-face {
+    font-family: 'TipografiaTextos';
+    src: url(/fonts/AtkinsonHyperlegible-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TipografiaTitulos';
+    src: url(/fonts/NortHeadline-Cond.ttf) format('truetype');
+  }
+
+
+
+
+body{
+    background-color: #ffe667 !important;
+}
+
+.vive-contenido{
+    font-family: tipografiaTextos;
+    color: #0b01c0;
+}
+
+.vive-titulo > h1{
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vive-p1 {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.vive-p1 > p{
+    font-size: 40px;
+    text-align: center;
+}
+
+.vive-p1 > p> span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.vive-p2 {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.vive-p2 > p{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.vive-fotos > div{
+    height: 300px;
+}
+
+
+.vive-fotos {
+    height: 900px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    column-gap: 200px;
+    row-gap: 150px;
+
+}
+
+    
+
+
+.vive-foto3 {
+    grid-row-start: 2;
+}
+
+.vive-foto4 {
+    grid-row-start: 2;
+}
+
+
+.vive-regresar{
+    color: #0b01c0;
+    font-family: tipografiatextos;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vive-regresar > a {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+
+
+    text-decoration: none;
+    color: #0b01c0;
+}
+
+
+.vive-regresar > a:hover{
+    color: #ff98dd;
+    text-decoration: underline;
+}
