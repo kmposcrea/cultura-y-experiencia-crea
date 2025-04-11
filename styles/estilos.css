@@ -305,10 +305,16 @@ body{
     margin-top: 60%;
     width: 50%;
 }
-
+body{
+    background-image: url(/img/Backings.png);
+    background-repeat: repeat;
+    resize: both;
+    overflow: auto;
+}
 
 
 @media (min-width: 575px) AND  (max-width: 768px){
+   
 
     .titulo-principal{
         display: flex;

@@ -10,7 +10,18 @@
   }
 
 
- 
+  
+
+  @media (max-width:768px) {
+    .inspira-img > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 249px;
+    }
+
+  }
 
 
 body{
@@ -19,18 +30,21 @@ body{
 
 .inspira-div{
     display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+
 }
 
 .inspira-img{
-    width: 800px;
+    width: 700px;
     height: 900px;
-    align-items: center;
-    justify-content: center;
 }
 
 .inspira-img > img{
-    /*top   dere    abajo  izq*/
-    margin: 30px 0px 0px 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 600px;
     height: 849px;
 }
@@ -157,5 +171,7 @@ list-style:none;
     color: #ffe667;
     text-decoration: underline;
 }
+
+
 
 
