@@ -16,6 +16,10 @@ body{
     background-color: #ffe667 !important;
 }
 
+.pagina {
+max-width: 2000px;
+  margin: 0 auto;
+}
 .vive-contenido{
     font-family: tipografiaTextos;
     color: #0b01c0;

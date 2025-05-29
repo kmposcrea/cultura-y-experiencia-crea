@@ -2,18 +2,25 @@
 @font-face {
     font-family: 'TipografiaTextos';
     src: url(/fonts/AtkinsonHyperlegible-Regular.ttf) format('truetype');
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: 'TipografiaTitulos';
     src: url(/fonts/NortHeadline-Cond.ttf) format('truetype');
-  }
+}
 
-  body{
+body{
     background-image: url(/img/Backings.png);
     background-repeat: repeat;
-    resize: both;
-    overflow: auto;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+
+.pagina {
+max-width: 2000px;
+  margin: 0 auto;
 }
 
 .titulo-principal{
@@ -31,17 +38,14 @@
 }
 
 .icono-crea{
-    width: 200px;
-    height: 200px;
+
     position: relative;
 }
 
-.icono-crea > img{
-    width: 200px;
-    height: 200px;
-
+.icono-crea, .icono-crea > img {
+  width: 200px;
+  height: 200px;
 }
-    
 
 /*Div Proposito*/
 
@@ -52,12 +56,17 @@
     display: flex;
     border-radius: 50px;
     background-color: #FFE667;
+     align-items: stretch; /* para que el alto de los hijos sea igual */
+  position: relative; /* para que el hijo absoluto se refiera a este contenedor */
 }
 
 .proposito-texto{
     color: #0C00C0;
     margin-left: 80px;
-
+    flex: 1; /* que ocupe todo el espacio que pueda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* opcional, centra verticalmente el texto */
     
 }
 
@@ -79,16 +88,16 @@
 }
 
 .proposito-img{
-    width: 300px;
-    height: 300px;
-    margin-right: 130px;
-    position: relative;
-    top: 60px;
-    left: 70px;
+  width: 300px;
+  position: relative; /* padre para la img absoluta */
+  display: flex;
+  justify-content: center; /* centra la imagen horizontalmente dentro del div */
 }
 .proposito-img > img{
-    width: 300px;
-    height: 300px;
+  position: absolute;
+  bottom: 0; /* pega la imagen abajo */
+  width: 300px;
+  height: auto;
 
 }
 
@@ -117,7 +126,7 @@
 .foto > .nombre-equipo{
     margin-top: 10px;
     font-family: 'TipografiaTextos';
-    font-size: 40px;
+    font-size: 30px;
 
     font-weight: bold;
     color: #0C00C0;
@@ -127,7 +136,7 @@
     margin-top: -20px;
     font-family: 'TipografiaTextos';
 
-    font-size: 25px;
+    font-size: 20px;
 
     color: #0C00C0;
 }
@@ -140,8 +149,8 @@
 .foto > img{
 
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -311,4 +320,101 @@
 
 
 
+
+@media screen and (max-width: 768px) {
+  .pagina {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .titulos > h1 {
+    font-size: 70px; /* Menor, pero mantiene diseño */
+  }
+
+  .icono-crea {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icono-crea > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .proposito-div {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .proposito-texto {
+    margin-left: 20px;
+  }
+
+  .proposito-titulo > h2 {
+    font-size: 36px;
+  }
+
+  .proposito-contenido > p {
+    font-size: 22px;
+    word-spacing: normal;
+  }
+
+  .proposito-img {
+    width: 180px;
+    height: 180px;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+  .proposito-img > img {
+    display: none; /* Ocultar imagen en pantallas pequeñas */
+  }
+
+  .equipo-titulo > h2,
+  .iniciativas-titulo > h2,
+  .impacto-titulo > h2 {
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .foto {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .foto > img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .nombre-equipo {
+    font-size: 24px;
+  }
+
+  .titulo-equipo {
+    font-size: 18px;
+  }
+
+  .impacto-fotos {
+    width: 100%;
+  }
+
+  .impacto-fotos > .row > .div-anios {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .contenedor-anios {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contenedor-anios > .titulo-equipo {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
 

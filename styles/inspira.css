@@ -23,6 +23,10 @@
 
   }
 
+.pagina {
+max-width: 2000px;
+  margin: 0 auto;
+}
 
 body{
     background-color: #a8de73 !important;
@@ -175,3 +179,90 @@ list-style:none;
 
 
 
+@media (max-width: 1536px) and (min-width: 1366px) {
+  /* Estilos para pantallas Full HD con escala 125% */
+  .inspira-div {
+    gap: 37.5px; /* antes 50px */
+    margin-top: 37.5px; /* antes 50px */
+}
+
+.inspira-img {
+    width: 525px; /* antes 700px */
+    height: 675px; /* antes 900px */
+}
+
+.inspira-img > img {
+    width: 450px; /* antes 600px */
+    height: 636.75px; /* antes 849px */
+}
+
+.inspira-texto {
+    margin-top: 135px; /* antes 180px */
+    width: 750px; /* antes 1000px */
+}
+
+.inspira-titulo > h2 {
+    font-size: 37.5px; /* antes 50px */
+}
+
+.inspira-contenido > p {
+    font-size: 30px; /* antes 40px */
+}
+
+.inspira-form {
+    font-size: 31.5px; /* antes 42px */
+    width: 300px; /* antes 400px */
+    height: 75px; /* antes 100px */
+    padding-top: 12px; /* antes 16px */
+    margin-top: 30px; /* antes 40px */
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.inspira-icono {
+    top: -7.5px; /* antes -10px */
+    right: 127.5px; /* antes 170px */
+    width: 112.5px; /* antes 150px */
+    height: 112.5px; /* antes 150px */
+}
+
+.inspira-icono > img {
+    width: 112.5px; /* antes 150px */
+}
+
+.talleres-titulo {
+    margin-top: 15px; /* antes 20px */
+}
+
+.talleres-titulo > h2 {
+    font-size: 37.5px; /* antes 50px */
+}
+
+.talleres-contenido {
+    margin-top: 15px; /* antes 20px */
+    font-size: 37.5px; /* antes 50px */
+    width: 1012.5px; /* antes 1350px */
+    line-height: 127.5px; /* antes 170px */
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.taller-img {
+    width: 75px; /* antes 100px */
+    height: 75px; /* antes 100px */
+}
+
+.taller-img > img {
+    width: 75px; /* antes 100px */
+}
+
+.talleres-regresar {
+    font-size: 30px; /* antes no definido pero ajustado */
+    margin-bottom: 30px; /* antes 40px */
+}
+
+.talleres-regresar > a {
+    font-size: 30px; /* antes 40px */
+}
+
+}
